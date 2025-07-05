@@ -1,51 +1,50 @@
-# 🗓 Project Timeline – Portfolio Web PDF Translator
+# 🗓️ Kế Hoạch Thực Hiện Dự Án – Ứng dụng Dịch PDF Trực Tuyến
 
-This document outlines the planned phases and timeline for developing a personal web application that uploads and translates PDF documents, then displays them side by side.
-
----
-
-## 📌 Phase 1: Planning & Requirements (05–07 July)
-
-- [x] Create GitHub repository and project Kanban board
-- [x] Set up folder structure (docs/, src/, tests/, .github/)
-- [x] Write `requirements.md` with functional & non-functional requirements
-- [x] Define basic tech stack (React + FastAPI)
+Tài liệu này mô tả các giai đoạn phát triển dự án cùng với mốc thời gian và công việc tương ứng. Dự án nhằm xây dựng một ứng dụng web cá nhân giúp tải lên và dịch các tệp PDF, hiển thị song song bản gốc và bản dịch, hỗ trợ tải xuống và in.
 
 ---
 
-## 📌 Phase 2: Design & Setup (08–10 July)
+## 📌 Giai đoạn 1: Lập kế hoạch & Xác định yêu cầu (05–07/07)
 
-- [x] Design wireframe: LandingPage, UploadPage, Viewer
-- [x] Create basic React layout (UI skeleton)
-- [ ] Set up FastAPI project structure
-- [ ] Plan backend routes: `/upload`, `/translate`, `/download`
-
----
-
-## 📌 Phase 3: Implementation – Core Features (11–20 July)
-
-- [ ] Implement file upload in frontend
-- [ ] Build `/upload` endpoint to receive PDF file
-- [ ] Store PDF file on server temporarily
-- [ ] Add basic mock translation function
-- [ ] Create viewer UI to display two PDFs side by side
-- [ ] Synchronize scroll between original and translated views
+- [x] Tạo kho lưu trữ GitHub và project board kiểu Kanban
+- [x] Tạo cấu trúc thư mục dự án (docs/, src/, tests/, .github/)
+- [x] Viết file `requirements.md` bằng tiếng Việt
+- [ ] Xác định công nghệ sử dụng (React, FastAPI)
 
 ---
 
-## 📌 Phase 4: Polish & Testing (21–24 July)
+## 📌 Giai đoạn 2: Thiết kế giao diện và kiến trúc (08–10/07)
 
-- [ ] Add download and print buttons
-- [ ] Improve error handling (file too big, wrong format, server errors)
-- [ ] Add loading state/spinner during upload/translation
-- [ ] Manual test upload, display, and print on different browsers
+- [ ] Phác thảo giao diện trang chính: LandingPage, UploadPage, Viewer
+- [ ] Tạo giao diện khung cơ bản bằng React
+- [ ] Khởi tạo project FastAPI ở backend
+- [ ] Xác định các API chính: `/upload`, `/translate`, `/download`
 
 ---
 
-## 📌 Phase 5: Demo & Wrap-up (25–26 July)
+## 📌 Giai đoạn 3: Lập trình chức năng chính (11–20/07)
 
-- [ ] Prepare local or live demo version
-- [ ] Review code structure, clean up unused files
-- [ ] Write usage instructions in `README.md`
-- [ ] Update GitHub project board and close finished issues
+- [ ] Hiện thực tính năng tải lên tệp PDF ở frontend
+- [ ] Xây dựng endpoint `/upload` nhận và lưu tệp PDF
+- [ ] Xử lý bản dịch giả lập (mock) và trả lại file
+- [ ] Tạo viewer hiển thị song song hai tệp PDF
+- [ ] Đồng bộ cuộn dọc giữa hai khung hiển thị
+
+---
+
+## 📌 Giai đoạn 4: Hoàn thiện giao diện và kiểm thử (21–24/07)
+
+- [ ] Thêm nút tải xuống và in bản dịch
+- [ ] Cải thiện xử lý lỗi (file không hợp lệ, vượt dung lượng, lỗi máy chủ)
+- [ ] Thêm hiệu ứng loading trong lúc xử lý
+- [ ] Kiểm thử thủ công trên Chrome, Firefox và Safari
+
+---
+
+## 📌 Giai đoạn 5: Trình diễn và hoàn tất (25–26/07)
+
+- [ ] Chuẩn bị bản demo chạy trên máy local hoặc hosting đơn giản
+- [ ] Rà soát lại mã nguồn, xoá các file/thư mục không cần thiết
+- [ ] Hoàn chỉnh `README.md` và hướng dẫn sử dụng
+- [ ] Cập nhật project board và đánh dấu hoàn thành các đầu việc
 
