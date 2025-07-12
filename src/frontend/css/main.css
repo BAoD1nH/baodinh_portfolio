@@ -40,6 +40,7 @@ body {
 	list-style: none;
 	display: flex;
 	gap: 20px;
+	align-items: center;
 }
 
 .nav-links li a {
@@ -58,6 +59,28 @@ body {
 	display: none;
 }
 
+/* ===== Darkmode Toggle Box ===== */
+.dark-toggle {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-left: 20px;
+}
+
+.toggle-label {
+	color: white;
+	cursor: pointer;
+	font-weight: 500;
+}
+
+#dark-mode-toggle {
+	width: 18px;
+	height: 18px;
+	accent-color: black;
+	cursor: pointer;
+}
+
+/* ===== Responsive Navbar ===== */
 @media (max-width: 768px) {
 	.nav-links {
 		position: absolute;
@@ -125,95 +148,104 @@ a.button:hover,
 }
 
 /* ===== DARK MODE OVERRIDES ===== */
-body.darkmode {
+html.darkmode {
 	background-color: #111 !important;
-	color: #e0e0e0 !important;
+	color: #ffffff !important;
 }
 
 /* Links */
-body.darkmode a {
-	color: #ccc !important;
+html.darkmode a {
+	color: #ffffff !important;
 	text-decoration: none;
 }
-
-body.darkmode a:hover {
-	color: #fff !important;
+html.darkmode a:hover {
+	color: #ffffff !important;
 	text-decoration: underline;
 }
 
-/* Container blocks */
-body.darkmode .container,
-body.darkmode .section,
-body.darkmode .box,
-body.darkmode .card {
+/* Containers & layout blocks */
+html.darkmode body,
+html.darkmode .container,
+html.darkmode .section,
+html.darkmode .box,
+html.darkmode .card,
+html.darkmode main,
+html.darkmode .wrapper {
 	background-color: #1e1e1e !important;
-	box-shadow: none;
+	color: #ffffff !important;
 }
 
 /* Buttons */
-body.darkmode button,
-body.darkmode .cta-button {
+html.darkmode button,
+html.darkmode .cta-button {
 	background-color: #555 !important;
-	color: #fff !important;
+	color: #ffffff !important;
 }
-
-body.darkmode button:hover,
-body.darkmode .cta-button:hover {
+html.darkmode button:hover,
+html.darkmode .cta-button:hover {
 	background-color: #777 !important;
 }
 
 /* Navbar & Footer */
-body.darkmode .navbar,
-body.darkmode .footer {
+html.darkmode .navbar,
+html.darkmode .footer {
 	background-color: #222 !important;
-	color: #ccc !important;
+	color: #ffffff !important;
 }
 
-body.darkmode .nav-links a,
-body.darkmode .footer-social a {
-	color: #ccc !important;
+html.darkmode .nav-links a,
+html.darkmode .footer-social a {
+	color: #ffffff !important;
 }
 
 /* === About Me Overrides === */
-body.darkmode .avatar {
-	border-color: #888 !important;
+html.darkmode .avatar {
+	border-color: #ffffff !important;
 }
 
-body.darkmode .section h2,
-body.darkmode .skill-group h2,
-body.darkmode .project-content h2,
-body.darkmode .title {
-	color: #f0f0f0 !important;
+html.darkmode .section h2,
+html.darkmode .skill-group h2,
+html.darkmode .project-content h2,
+html.darkmode .title {
+	color: #ffffff !important;
 }
 
-body.darkmode .skills li {
+html.darkmode .skills li {
 	background: #333 !important;
-	color: #eee !important;
+	color: #ffffff !important;
 }
 
 /* === Projects Overrides === */
-body.darkmode .project-card {
+html.darkmode .project-card {
 	background-color: #2a2a2a !important;
 	box-shadow: none !important;
 }
 
-body.darkmode .project-content p {
-	color: #ccc !important;
-}
-
-body.darkmode .project-content a {
-	color: #ccc !important;
-}
-
-body.darkmode .project-content a:hover {
-	color: #fff !important;
+html.darkmode .project-content p,
+html.darkmode .project-content a,
+html.darkmode .project-content a:hover {
+	color: #ffffff !important;
 }
 
 /* === Skills Overrides === */
-body.darkmode .progress {
+html.darkmode .progress {
 	background: #444 !important;
 }
 
-body.darkmode .bar {
-	background: linear-gradient(to right, #888, #ccc) !important;
+html.darkmode .bar {
+	background: linear-gradient(to right, #ffffff, #bbbbbb) !important;
 }
+
+/* === Homepage Overrides === */
+/* Light Mode: Xanh nhạt, chữ đen */
+:root {
+	--overlay-bg: rgba(0, 119, 204, 0.2);  /* xanh nhạt nền trong */
+	--overlay-text: #000;                 /* chữ đen */
+}
+
+/* Dark Mode: Nền tối, chữ sáng */
+html.darkmode {
+	--overlay-bg: rgba(0, 0, 0, 0.6);     /* đen mờ */
+	--overlay-text: #fff;                /* chữ trắng */
+}
+

@@ -1,4 +1,3 @@
-
 // === Load navbar & footer ===
 function includeHTML(selector, file) {
 	fetch(file)
@@ -16,23 +15,21 @@ window.addEventListener("DOMContentLoaded", () => {
 	setTimeout(() => {
 		const toggle = document.getElementById("dark-mode-toggle");
 		if (!toggle) return;
-		//DARKMODE
-		// Load trạng thái lưu trong localStorage
+
+		// DARKMODE — dùng html tag thay vì body
 		if (localStorage.getItem("darkmode") === "true") {
-			document.body.classList.add("darkmode");
+			document.documentElement.classList.add("darkmode");
 			toggle.checked = true;
 		}
 
-		// Khi người dùng bấm bật/tắt
 		toggle.addEventListener("change", () => {
 			if (toggle.checked) {
-				document.body.classList.add("darkmode");
+				document.documentElement.classList.add("darkmode");
 				localStorage.setItem("darkmode", "true");
 			} else {
-				document.body.classList.remove("darkmode");
+				document.documentElement.classList.remove("darkmode");
 				localStorage.setItem("darkmode", "false");
 			}
 		});
-	}, 200); // đợi 200ms để header/footer kịp load
+	}, 200); // Đợi header/footer được load xong
 });
-

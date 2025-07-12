@@ -1,3 +1,4 @@
+/* ===== Hero Section ===== */
 .hero {
 	height: 100vh;
 	background: url('assets/hero.jpg') no-repeat center center/cover;
@@ -8,26 +9,48 @@
 	text-align: center;
 }
 
+/* Overlay box */
 .overlay {
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: var(--overlay-bg, rgba(173, 216, 230, 0.7)); /* light blue default */
+	color: var(--overlay-text, #000); /* default black text */
 	padding: 40px;
 	border-radius: 12px;
 }
 
+/* Title */
 .headline {
 	font-size: 3rem;
 	margin-bottom: 10px;
+	color: #0077cc; /* xanh dương */
 }
 
+/* Subtitle */
 .subhead {
 	font-size: 1.5rem;
 	margin-bottom: 20px;
-	color: #ccc;
+	color: #000; /* đen */
 }
 
+/* About section dưới hero */
 .about-section {
-	background: #fff;
+	background: #f0f8ff; /* xanh dương nhạt */
 	color: #333;
 	padding: 60px 20px;
 	text-align: center;
+}
+
+/* ===== Dark Mode Overrides ===== */
+html.darkmode .overlay {
+	background-color: rgba(0, 0, 0, 0.6) !important;
+	color: #fff !important;
+}
+
+html.darkmode .headline,
+html.darkmode .subhead {
+	color: #fff !important;
+}
+
+html.darkmode .about-section {
+	background-color: #1e1e1e !important;
+	color: #fff !important;
 }
