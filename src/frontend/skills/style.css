@@ -1,0 +1,38 @@
+.skill-group {
+	margin-bottom: 40px;
+}
+
+.skill-group h2 {
+	color: #0077cc;
+	margin-bottom: 10px;
+}
+
+.skill-group p {
+	margin-bottom: 20px;
+	font-style: italic;
+}
+
+.skill-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+}
+
+.skill-item {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.progress {
+	background: #e0e0e0;
+	border-radius: 6px;
+	overflow: hidden;
+	height: 12px;
+}
+
+.bar {
+	background: linear-gradient(to right, #00bfff, #0077cc);
+	height: 100%;
+	border-radius: 6px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Dự án của tôi</title>
+	<script>
+		if (localStorage.getItem('darkmode') === 'true') {
+			document.documentElement.classList.add('darkmode');
+		}
+	</script>
+
+	<link rel="stylesheet" href="../css/main.css" />
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+	<header></header>
+	<div class="container">
+		<h1 class="title">Các dự án nổi bật</h1>
+
+		<div class="project-card">
+			<img src="assets/place_holder_1.jpg" alt="Smart Door Lock" class="project-image" />
+			<div class="project-content">
+				<h2>Smart Door Lock</h2>
+				<p>Hệ thống khóa cửa thông minh sử dụng nhận diện khuôn mặt để mở khóa.</p>
+				<p><strong>Công nghệ:</strong> Python, OpenCV, TFLite, ESP32</p>
+				<p>
+					<a href="https://github.com/yourusername/smart-door-lock" target="_blank">🔗 GitHub</a> |
+					<a href="https://www.youtube.com/watch?v=your-demo-video" target="_blank">▶️ Demo Video</a>
+				</p>
+			</div>
+		</div>
+
+		<div class="project-card">
+			<img src="assets/place_holder_2.jpg" alt="PDF Translator Web" class="project-image" />
+			<div class="project-content">
+				<h2>PDF Translator Web</h2>
+				<p>Web app cho phép người dùng tải lên PDF và nhận bản dịch tự động.</p>
+				<p><strong>Công nghệ:</strong> React, FastAPI, Docker, OCR</p>
+				<p>
+					<a href="https://github.com/yourusername/pdf-translator" target="_blank">🔗 GitHub</a> |
+					<a href="https://youtu.be/your-demo-video-2" target="_blank">▶️ Demo Video</a>
+				</p>
+			</div>
+		</div>
+
+		<!-- Bạn có thể thêm nhiều dự án khác bằng cách sao chép khối project-card -->
+		
+	</div>
+
+	<footer></footer>
+	<script src="../js/load-components.js"></script>
+</body>
+</html>

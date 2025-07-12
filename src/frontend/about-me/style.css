@@ -1,0 +1,38 @@
+.profile {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.avatar {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 3px solid #0077cc;
+	margin-bottom: 10px;
+}
+
+.section {
+	margin-bottom: 30px;
+}
+
+.section h2 {
+	color: #444;
+	margin-bottom: 10px;
+}
+
+.skills {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 10px;
+	list-style: none;
+	padding: 0;
+}
+
+.skills li {
+	background: #0077cc;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	text-align: center;
+}
