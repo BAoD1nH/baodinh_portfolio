@@ -8,8 +8,8 @@ function includeHTML(selector, file) {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-	includeHTML("header", "../components/navbar.html");
-	includeHTML("footer", "../components/footer.html");
+	includeHTML("header", "./components/navbar.html");
+	includeHTML("footer", "./components/footer.html");
 
 	// Delay để đợi navbar được load vào DOM
 	setTimeout(() => {
