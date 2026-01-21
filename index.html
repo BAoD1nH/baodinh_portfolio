@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bao Dinh | AI Engineer & Computer Vision Researcher</title>
+    <link rel="icon" href="assets/favicon.jpg" type="image/jpeg">
+    <meta name="description" content="Portfolio of Bao Dinh - AI Engineer & Computer Vision Researcher specializing in 3D Gaussian Splatting and IoT.">
+    <meta name="keywords" content="Bao Dinh, AI Engineer, Computer Vision, 3DGS, Portfolio, HCMUS">
+    <meta name="author" content="Bao Dinh">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://baod1nh.github.io/baodinh_portfolio/">
+    <meta property="og:title" content="Bao Dinh | AI Engineer & Computer Vision Researcher">
+    <meta property="og:description" content="Explore my projects in AI, Computer Vision, and 3D Gaussian Splatting.">
+    <meta property="og:image" content="https://baod1nh.github.io/baodinh_portfolio/assets/images/avatar.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://baod1nh.github.io/baodinh_portfolio/">
+    <meta property="twitter:title" content="Bao Dinh | AI Engineer & Computer Vision Researcher">
+    <meta property="twitter:description" content="Explore my projects in AI, Computer Vision, and 3D Gaussian Splatting.">
+    <meta property="twitter:image" content="https://baod1nh.github.io/baodinh_portfolio/assets/images/avatar.jpg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -81,10 +97,23 @@
                 Final-year student at HCMUS specializing in Artificial Intelligence, Computer Vision, and IoT. 
                 Passionate about building smart systems and exploring 3D Gaussian Splatting.
             </p>
-            <div class="flex justify-center space-x-4">
-                <a href="#projects" class="border border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-full transition font-medium">View Work</a>
-                <a href="https://github.com/BAoD1nH" target="_blank" class="text-gray-400 hover:text-white text-3xl transition"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/bao-dinh-it/" target="_blank" class="text-gray-400 hover:text-white text-3xl transition"><i class="fab fa-linkedin"></i></a>
+            <div class="flex justify-center items-center gap-4 sm:gap-6 mt-8">
+                <a href="#projects" class="border border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-full transition font-medium">
+                    View Work
+                </a>
+
+                <a href="assets/pdf/BaoDinh_Resume.pdf" download class="bg-primary hover:bg-blue-600 text-white px-6 py-3 rounded-full transition font-medium flex items-center shadow-lg shadow-blue-500/30">
+                    <i class="fas fa-download mr-2"></i> Download CV
+                </a>
+
+                <div class="flex gap-4 ml-2 border-l border-gray-700 pl-6">
+                    <a href="https://github.com/BAoD1nH" target="_blank" class="text-gray-400 hover:text-white text-3xl transition transform hover:scale-110">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/bao-dinh-it/" target="_blank" class="text-gray-400 hover:text-white text-3xl transition transform hover:scale-110">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -138,11 +167,38 @@
     <section id="projects" class="py-20">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-white mb-12 text-center">Featured Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 
-                <div class="bg-card rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition duration-300 shadow-lg shadow-black/50">
-                    <div class="h-48 bg-gray-800 flex items-center justify-center">
-                        <i class="fas fa-video text-5xl text-gray-600"></i> </div>
+                <div class="bg-card rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition duration-300 shadow-lg shadow-black/50 group">
+                    <div class="h-64 bg-gray-800 overflow-hidden relative">
+                        <div class="absolute inset-0 flex items-center justify-center bg-gray-700 group-hover:bg-gray-600 transition">
+                             <i class="fas fa-calendar-check text-6xl text-gray-400"></i>
+                        </div>
+                        </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">FlowAI - Note to Goal</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            AI Productivity Assistant that turns notes into actionable goals. Features auto-summarization (Vietnamese context) and syncs tasks directly with Google Calendar.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs text-primary bg-primary/10 px-2 py-1 rounded">GenAI</span>
+                            <span class="text-xs text-primary bg-primary/10 px-2 py-1 rounded">Google API</span>
+                            <span class="text-xs text-primary bg-primary/10 px-2 py-1 rounded">Web App</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/BAoD1nH/FlowAI" target="_blank" class="text-white text-sm hover:text-primary transition flex items-center">
+                                View Code &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-card rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition duration-300 shadow-lg shadow-black/50 group">
+                    <div class="h-64 bg-gray-800 overflow-hidden relative">
+                         <div class="absolute inset-0 flex items-center justify-center bg-gray-700 group-hover:bg-gray-600 transition">
+                            <i class="fas fa-video text-6xl text-gray-400"></i>
+                        </div>
+                    </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-white mb-2">Human Activity Recognition</h3>
                         <p class="text-gray-400 text-sm mb-4">Video-based activity recognition pipeline using ResNet50 for feature extraction and LSTM. Achieved 81.2% accuracy on UCF dataset.</p>
@@ -150,28 +206,18 @@
                             <span class="text-xs text-primary bg-primary/10 px-2 py-1 rounded">ResNet50</span>
                             <span class="text-xs text-primary bg-primary/10 px-2 py-1 rounded">LSTM</span>
                         </div>
-                        <a href="https://github.com/BAoD1nH" class="text-white text-sm hover:text-primary transition">View Code &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="bg-card rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition duration-300 shadow-lg shadow-black/50">
-                    <div class="h-48 bg-gray-800 flex items-center justify-center">
-                        <i class="fas fa-pen-nib text-5xl text-gray-600"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2">Handwriting Classification (ViT)</h3>
-                        <p class="text-gray-400 text-sm mb-4">Designed a Vision Transformer model from scratch. Trained on CIFAR-10 achieving 86.3% accuracy using AdamW & GELU.</p>
-                        <div class="flex gap-2 mb-4">
-                            <span class="text-xs text-primary bg-primary/10 px-2 py-1 rounded">Vision Transformer</span>
-                            <span class="text-xs text-primary bg-primary/10 px-2 py-1 rounded">PyTorch</span>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/BAoD1nH/BD_HAR_25" target="_blank" class="text-white text-sm hover:text-primary transition">View Code &rarr;</a>
+                            <a href="#" class="text-red-400 text-sm hover:text-red-300 transition flex items-center"><i class="fab fa-youtube mr-1"></i> Demo</a>
                         </div>
-                        <a href="https://github.com/BAoD1nH" class="text-white text-sm hover:text-primary transition">View Code &rarr;</a>
                     </div>
                 </div>
 
-                <div class="bg-card rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition duration-300 shadow-lg shadow-black/50">
-                    <div class="h-48 bg-gray-800 flex items-center justify-center">
-                        <i class="fas fa-door-open text-5xl text-gray-600"></i>
+                <div class="bg-card rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition duration-300 shadow-lg shadow-black/50 group">
+                    <div class="h-64 bg-gray-800 overflow-hidden relative">
+                         <div class="absolute inset-0 flex items-center justify-center bg-gray-700 group-hover:bg-gray-600 transition">
+                            <i class="fas fa-door-open text-6xl text-gray-400"></i>
+                        </div>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-white mb-2">Smart Door Lock System</h3>
@@ -180,7 +226,29 @@
                             <span class="text-xs text-primary bg-primary/10 px-2 py-1 rounded">IoT</span>
                             <span class="text-xs text-primary bg-primary/10 px-2 py-1 rounded">MobileNetV2</span>
                         </div>
-                        <a href="https://github.com/BAoD1nH" class="text-white text-sm hover:text-primary transition">View Code &rarr;</a>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/BAoD1nH/SDLS_AIOT" target="_blank" class="text-white text-sm hover:text-primary transition">View Code &rarr;</a>
+                            <a href="#" class="text-red-400 text-sm hover:text-red-300 transition flex items-center"><i class="fab fa-youtube mr-1"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-card rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition duration-300 shadow-lg shadow-black/50 group">
+                    <div class="h-64 bg-gray-800 overflow-hidden relative">
+                         <div class="absolute inset-0 flex items-center justify-center bg-gray-700 group-hover:bg-gray-600 transition">
+                            <i class="fas fa-pen-nib text-6xl text-gray-400"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Handwriting Classification (ViT)</h3>
+                        <p class="text-gray-400 text-sm mb-4">Designed a Vision Transformer model from scratch. Trained on CIFAR-10 achieving 86.3% accuracy using AdamW & GELU.</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="text-xs text-primary bg-primary/10 px-2 py-1 rounded">Vision Transformer</span>
+                            <span class="text-xs text-primary bg-primary/10 px-2 py-1 rounded">PyTorch</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/BAoD1nH" target="_blank" class="text-white text-sm hover:text-primary transition">View Code &rarr;</a>
+                        </div>
                     </div>
                 </div>
 
